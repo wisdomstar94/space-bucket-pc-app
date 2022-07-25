@@ -1,20 +1,12 @@
 import { app, BrowserWindow } from "electron";
-import * as path from "path";
+import { browserWindow } from "./librarys/browser-window";
 
 function createWindow() {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  const mainWindow = browserWindow('/test', {
     height: 600,
-    webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
-    },
     width: 800,
   });
-
-  // and load the index.html of the app.
-  // mainWindow.loadFile(path.join(__dirname, "../index.html"));
-  // mainWindow.loadURL('http://localhost:4200');
-  mainWindow.loadURL('file://' + path.join(__dirname, '..', 'client', 'index.html') + '#/test');
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();

@@ -1,0 +1,32 @@
+{
+  "name": "space-bucket-pc-app",
+  "version": "1.0.0",
+  "description": "다양한 워크스페이스를 저장하고 불러올 수 있는 기능을 제공하는 PC 앱입니다.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "keywords": [
+    "electron",
+    "pc",
+    "workspace",
+    "bucket",
+    "space bucket",
+    "space-bucket",
+    "space",
+    "bucket",
+    "app",
+    "space bucket app",
+    "space bucket pc app"
+  ],
+  "author": "wisdomstar94@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "electron": "^19.0.9",
+    "eslint": "^8.20.0",
+    "typescript": "^4.7.4"
+  }
+}
